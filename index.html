@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interactive Business Card</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="card-container">
+        <div class="content">
+          <div id="home" class="tab-content">
+            <div class="square-thumb">
+              <img
+                class="main-image"
+                src="//source.unsplash.com/JtV6zyOZSrA/200x200/"
+                alt="self portrait"
+              />
+            </div>
+
+            <h1 class="headline-title">A Photography Business</h1>
+            <p><strong>Jane Doe</strong> - Professional Photographer</p>
+          </div>
+          <div id="about" class="tab-content">
+            <h1>About</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              delectus, quisquam eius harum mollitia corporis tempore facilis id
+              explicabo eligendi laborum, quod quaerat obcaecati, architecto
+              assumenda nobis suscipit et fugiat?
+            </p>
+            <div class="about-image">
+              <img
+                class="main-image"
+                src="img/alif-ngoylung-jg-6ARMiaPM-unsplash.jpg"
+                alt="about me"
+              />
+            </div>
+          </div>
+          <div id="work" class="tab-content">
+            <h1>Work</h1>
+            <div class="work-container">
+              <div class="work-item">
+                <div class="work-item-image">
+                  <img
+                    class="main-image"
+                    src="img/rui-matayoshi-IfC4e4sdEYc-unsplash.jpg"
+                    alt="a project"
+                  />
+                </div>
+                <div class="work-description">
+                  <h3>A title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="work-item">
+                <div class="work-item-image">
+                  <img
+                    class="main-image"
+                    src="img/justin-roy-UzrBzugEhNk-unsplash.jpg"
+                    alt="a project"
+                  />
+                </div>
+                <div class="work-description">
+                  <h3>Another title...</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio dicta eos assumenda, qui ipsum recusandae excepturi
+                    esse.
+                  </p>
+                </div>
+              </div>
+              <div class="work-item">
+                <div class="work-item-image">
+                  <img
+                    class="main-image"
+                    src="img/alex-vasey-3lxrM5yvkcI-unsplash.jpg"
+                    alt="a project"
+                  />
+                </div>
+                <div class="work-description">
+                  <h3>Yet one more title!</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Natus numquam omnis, itaque eos dicta deleniti amet illo
+                    placeat reiciendis vitae est praesentium nesciunt architecto
+                    nam. Unde, nesciunt! Assumenda, ducimus natus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contact" class="tab-content">
+            <h1>Contact</h1>
+            <div class="contact-form-container">
+              <form action="#">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your name..."
+                />
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your message..."
+                ></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <button class="nav-toggle hamburger-container" onclick="openNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+        <nav>
+          <a
+            class="tab-link"
+            href="#home"
+            onclick="openTab('home', this)"
+            id="defaultOpen"
+            >Home</a
+          >
+          <a class="tab-link" href="#about" onclick="openTab('about', this)"
+            >About</a
+          >
+          <a class="tab-link" href="#work" onclick="openTab('work', this)"
+            >Work</a
+          >
+          <a class="tab-link" href="#contact" onclick="openTab('contact', this)"
+            >Contact</a
+          >
+        </nav>
+      </div>
+      <footer>
+        <div class="copyrigh">
+          Copyright - Your Business | Images:
+          <a href="https://unsplash.com">Unsplash.com</a>
+        </div>
+        <div class="social-media">
+          <div class="social-icon">
+            <a href="facebook.com">
+              <img src="img/facebook-f.svg" alt="facebok" />
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="twitter.com">
+              <img src="img/twitter.svg" alt="twitter" />
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="instagram.com">
+              <img src="img/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="js/views.js"></script>
+    <script src="js/navMenu.js"></script>
+  </body>
+</html>
