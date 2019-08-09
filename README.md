@@ -1,4 +1,4 @@
-# interactive-business-card-theme
+# Interactive Business Card Theme
 
 A fully responsive website theme styled like a business card.
 
