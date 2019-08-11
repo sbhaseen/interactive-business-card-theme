@@ -86,6 +86,11 @@ img.main-image {
   font-size: 1.25rem;
 }
 
+.headline-text {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
 .card-container {
   background: linear-gradient(
     to right,
