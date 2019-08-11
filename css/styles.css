@@ -69,6 +69,7 @@ img.main-image {
   background-blend-mode: multiply;
   background-size: cover;
   text-align: center;
+  padding: 1.125em;
 
   display: flex;
   flex-direction: column;
@@ -82,7 +83,7 @@ img.main-image {
 }
 
 .headline-title {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .card-container {
@@ -93,7 +94,7 @@ img.main-image {
   );
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: var(--borderRad);
-  height: 80%;
+  height: 70%;
   width: 80%;
 
   display: flex;
@@ -114,7 +115,7 @@ img.main-image {
 }
 
 .about-image {
-  height: 50vh;
+  height: 40vh;
   padding: 1.1em;
   border-radius: var(--borderRad);
 }
@@ -153,6 +154,10 @@ img.main-image {
   margin-bottom: 1rem;
 }
 
+.copyright {
+  padding: 1em;
+}
+
 /* Contact Form */
 .contact-form-container {
   text-align: left;
@@ -164,6 +169,7 @@ img.main-image {
 input[type="text"],
 select,
 textarea {
+  font-family: var(--ff-sans);
   width: 100%;
   padding: 12px;
   border: none;
@@ -193,8 +199,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: var(--textDark);
-  color: var(--accent);
+  background-color: var(--primaryText);
+  color: var(--textDark);
   transition: background-color 250ms ease;
 }
 
@@ -209,9 +215,9 @@ button[type="submit"]:hover {
 
 .social-icon {
   background: var(--accent);
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border-radius: var(--borderRad);
   text-align: center;
   vertical-align: middle;
   margin: 0 1em;
@@ -221,7 +227,7 @@ button[type="submit"]:hover {
   display: block;
   margin: 0 auto;
   border: none;
-  max-height: 30px;
+  max-height: 20px;
   transform: translateY(50%);
 }
 
@@ -341,6 +347,10 @@ nav a:last-of-type {
     );
     height: 70%;
     width: 75%;
+  }
+
+  .headline-title {
+    font-size: 2rem;
   }
 
   .work-item {
