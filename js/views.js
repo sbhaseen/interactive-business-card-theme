@@ -1,29 +1,30 @@
-/* 
-A function to handle the displaying of contents for different tabs
-*/
+const tabContent = document.querySelectorAll('.tab-content');
+const tabLinks = document.querySelectorAll('.tab-link');
+
+/**
+ * A function that will hide a previously open tab and set a new tab to active.
+ * @param {string} tabName - Name of the tab that is clicked.
+ * @param {Object} element - The HTML element that will be set to active.
+ */
 function openTab(tabName, element) {
-  const tabContent = document.getElementsByClassName("tab-content");
-  const tabLinks = document.getElementsByClassName("tab-link");
   const currentTab = document.getElementById(tabName);
 
   // Hide all tab contents by default
-  for (let tab of tabContent) {
-    tab.classList.add("hidden");
-    tab.classList.remove("show");
-  }
+  tabContent.forEach(tab => {
+    tab.classList.add('hidden');
+    tab.classList.remove('show');
+  });
 
   // Remove active class styling on all link tabs
-  for (let link of tabLinks) {
-    link.classList.remove("active");
-  }
+  tabLinks.forEach(link => link.classList.remove('active'));
 
   // Show the specific tab content
-  currentTab.classList.remove("hidden");
-  currentTab.classList.add("show");
+  currentTab.classList.remove('hidden');
+  currentTab.classList.add('show');
 
   // Add the the active class styling to the clicked (open) link tab
-  element.classList.add("active");
+  element.classList.add('active');
 }
 
 // Get the default element and open it
-document.getElementById("defaultOpen").click();
+document.getElementById('defaultOpen').click();
