@@ -6,6 +6,8 @@ Easy style changes are enabled by judicious use of global CSS variables.
 
 It is made with vanilla HTML, CSS and JavaScript and is intended for modern browsers.
 
+Preview the theme [here](https://sbhaseen.github.io/interactive-business-card-theme/).
+
 ## Getting Started
 
 This project consists of the following:
